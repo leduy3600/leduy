@@ -1,0 +1,588 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+header{
+	height: 100%;
+	width: 300px;
+	background:#EBF5F9;
+	position: fixed;
+	z-index: 9999;
+	padding: 50px 65px;
+	font-family: 'Bungee', cursive;
+	display: flex;
+	flex-direction: column;
+}
+.thongtin{
+	height: 250px;
+	width: 175px;
+	color: #51BDEE;
+	text-align: center;
+	border-bottom: 2px solid #51BDEE;
+}
+.thongtin .chu p{
+	font-weight: 100px;
+	font-size: 12px;
+	margin-top: -17px;
+}
+.thongtin img{
+	height: 120px;
+	width: 120px;
+	border-radius: 100%;
+	margin-top: 5px;
+}
+.menu{
+	display: flex;
+	flex-direction: column;
+	margin-top: 80px;
+}
+.menu a{
+	color: #51BDEE;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 0px;
+	padding-left: 17px;
+}
+.menu a:hover{
+	text-decoration: underline;
+}
+.thongtin .chu a{
+	font-size: 10px;
+	font-weight: 100;
+}
+.thongtin h3{
+	font-size: 20px;
+	font-weight: 100;
+	margin-bottom: -20px;
+	margin-top: -20px;
+}
+.icon-menu ion-icon{
+	height: 24px;
+	width: 24px;
+	color: #51BDEE;
+	padding-left: 2px;
+}
+main{
+	padding-left: 300px;
+}
+#feedback{
+	background: blue;
+}
+.backtotop{
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	z-index: 10000;
+	font-size: 36px;
+	color: #51BDEE;
+	height: 50px;
+	width: 50px;
+	border: 1px solid #51BDEE;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 50px;
+}
+.backtotop a{
+	color: #51BDEE;
+	display: block;
+	padding-top: 4px;
+}
+.tickericon{
+	position: fixed;
+	right: 0;
+	top: 40%;
+	display: flex;
+	flex-direction: column;
+	z-index: 100;
+}
+.tickericon a{
+	background: white;
+	padding: 10px;
+	color: #51BDEE;
+	border-radius: 2px;
+	margin-top: 3px;
+	box-shadow: -3px 3px 13px 5px rgba(81,189,238,0.18);
+}
+.tickericon a:hover{
+	padding-left: 200px;
+}
+#banner{
+	background:#1497DF;
+	height: 100vh;
+	overflow: hidden;
+}
+video{
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+.bannertext h1{
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .10em;
+	animation: 
+		typing 3s steps(40, end),
+		blink-caret .80s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+.bannertext{
+	position: absolute;
+	top: 10%;
+	text-align: center;
+	left: 36%;
+	font-size: 4.5vh;
+	font-family: 'Bungee', cursive;
+	font-weight: lighter;
+	line-height: 1.5;
+	color: white;
+	object-fit: cover;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	margin-left: 3vh;
+	animation-name: example;
+	animation-duration: 4s;
+}
+#portfolio{
+	width: 100%;
+	background: white;
+}
+.colum-1{
+	width: 45%;
+}
+.colum-1 img{
+	height: 700px;
+	margin-top: 10px;
+	margin-left: 50px;
+	z-index: 19;
+}
+.colum-2{
+	width: 50%;
+	margin-right: 50px;
+}
+.container{
+	width: 1300px;
+	margin: 0 auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.colum{
+	width: 100%;
+}
+.colum h2{
+	color: #51BDEE;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 28px;
+	font-family: 'Bungee', cursive;
+	font-weight: 100;
+	text-decoration-line: overline;
+}
+.chubenphai{
+	margin-left: 10%;
+}
+.colum-2 .chubenphai h3{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 25px;
+	color: #51BDEE;
+	line-height: 1.5;
+	margin-left: 50px;
+}
+.chubenphai p{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 19px;
+	color: #51BDEE;
+	line-height: 2;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+#skills{
+	width: 100%;
+	height: 730px;
+	background: white;
+}
+.h1{
+	margin-top: 30px;
+}
+.container1{
+	width: 95%;
+	background-color:#BCD8E5;
+	border-radius: 3px 30px 0px 0px;
+}
+.skill{
+	text-align: right;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: white;
+}
+#skills .colum-1{
+	margin-left: 50px;
+}
+#skills .colum-1 p{
+	padding-bottom: 5px;
+	padding-top: 35px;
+	font-size: 24px;
+	color:#81BDEE;
+	font-family: 'Maven Pro', sans-serif;
+}
+.pts{
+	width: 50%;
+	background-color:#51BDEE ;
+	border-radius: 3px 30px 0px 0px;
+}
+.ai{
+	width: 51%;
+	background-color: #51BDEE;
+	border-radius: 3px 30px 0px 0px;
+}
+.id{
+	width: 52%;
+	background-color: #51BDEE;
+	border-radius: 3px 30px 0px 0px;
+}
+.dw{
+	width: 53%;
+	background-color: #51BDEE;
+	border-radius: 3px 30px 0px 0px;
+}
+.img-skill{
+}
+.img-skill img{
+	height: 450px;
+}
+.colum-3{
+	width: 45%;
+}
+#feedback{
+	background: white;
+	height: 500px;
+}
+.fb{
+	margin-bottom: 20px;
+}
+.columfull{
+	width: 100%;
+}
+.loibinh{
+	justify-content: center;
+	align-content: center;
+	box-sizing: border-box;
+	padding: 0 30px;
+}
+.colum-33{
+	width: 30%;
+	height: 250px;
+	background: white;
+	box-shadow: -3px 3px 13px 5px rgba(81,189,238,0.18);
+	margin-left: 40px;
+	border-radius: 5px 100px 15px 100px;
+	margin-bottom: 50px;
+}
+.itemssv {
+	padding: 10px 55px;
+	color:#51BDEE;
+}
+.itemssv h2{
+	font-size: 20px;
+	font-family: 'Bungee', cursive;
+	font-weight: 100;
+}
+.itemssv p{
+	color:#A7D4E9;
+	margin-top: -10px;
+	font-size: 16px;
+	font-family: 'Maven Pro', sans-serif;
+}
+.sv-icon{
+	width: 40px;
+	height: 30px;
+	display: flex;
+	color: #51BDEE;
+	font-size: 40px;
+	margin: 10px 0px 0px 10px;
+}
+#services{
+	background: white;
+}
+.colum-5{
+	width: 45%;
+	height: 400px;
+	margin: 10px;
+	text-align: center;
+	padding: 55px 80px;
+}
+.mg-l{
+	margin-left: 100px;
+}
+.web img{
+	height: 175px;
+}
+.web h4{
+	font-size: 24px;
+	font-family: 'Bungee', cursive;
+	font-weight: 100;
+	color:#51BDEE;
+	margin: 5px 0 -15px 0;
+}
+.web p{
+	color: #A7D4E9;
+	font-family: 'Maven Pro', sans-serif;
+}
+.edit img{
+	height: 175px;
+}
+.edit h4{
+	font-size: 24px;
+	font-family: 'Bungee', cursive;
+	font-weight: 100;
+	color:#51BDEE;
+	margin: 5px 0 -15px 0;
+}
+.edit p{
+	color: #A7D4E9;
+	font-family: 'Maven Pro', sans-serif;
+}
+.game img{
+	height: 175px;
+}
+.game h4{
+	font-size: 24px;
+	font-family: 'Bungee', cursive;
+	font-weight: 100;
+	color:#51BDEE;
+	margin: 5px 0 -15px 0;
+}
+.game p{
+	color: #A7D4E9;
+	font-family: 'Maven Pro', sans-serif;
+}
+.pain img{
+	height: 175px;
+}
+.pain h4{
+	font-size: 24px;
+	font-family: 'Bungee', cursive;
+	font-weight: 100;
+	color:#51BDEE;
+	margin: 5px 0 -15px 0;
+}
+.pain p{
+	color: #A7D4E9;
+	font-family: 'Maven Pro', sans-serif;
+}
+.textal{
+	text-align: center;
+}
+#contacts{
+	background: white;
+	height: 700px;
+}
+.box{
+	position: absolute;
+	padding: 30px;
+}
+table{
+	width: 170%;
+	margin-left: 125px;
+	justify-content: center;
+	background:#EBF8FF;
+	padding: 30px;
+	border-radius: 8px;
+	margin-top: -50px;
+}
+td{
+	padding: 10px;
+	box-sizing: border-box;
+}
+input{
+	height: 50px;
+	padding: 10px;
+	border-radius: 8px;
+	border: 1px solid #51BDEE;
+	width: 100%;
+	font-family: 'Maven Pro', sans-serif;
+	color: #51BDEE;
+	box-sizing: border-box;
+	outline: none;
+}
+select{
+	height: 50px;
+	border-radius: 8px;
+	border: 1px solid #51BDEE;
+	color:#51BDEE;
+	padding-left: 5px;
+	font-family: 'Maven Pro', sans-serif;
+	width: 100%;
+	box-sizing: border-box;	
+}
+button{
+	padding: 15px 35px;
+	border: none;
+	color: white;
+	border-radius: 8px;
+	background: #51BDEE;
+	margin-left: 43.5%;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 20px;
+}
+.mess{
+	padding: 20px 0px 70px 10px;
+}
+.box h2{
+	font-size: 35px;
+	color: white;
+	font-family: 'Bungee', cursive;
+	font-weight: 100;
+}
+.box p{
+	font-size: 20px;
+	font-family: 'Maven Pro', sans-serif;
+	color: #51BDEE;
+}
+#product{
+	background: white;
+	height: 900px;
+	margin-left: 50px;
+}
+.boxer{
+	height: 200px;
+	width: 655px;
+	position: relative;
+	background: white;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.boxer img{
+	width: 100%;
+}
+.content{
+	width: 565px;
+	background: #51BDEE;
+	position: absolute;
+	top:0;
+	height: 100%;
+	transition-duration: 0.4s;
+	overflow: hidden;
+}
+.slide-r{
+	width: 0;
+}
+.boxer:hover .slide-r{
+	width: 100%;
+}
+.content h5{
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	font-family: 'Maven Pro', sans-serif;
+	padding-top: 60px;
+	margin-left: -10px;
+}
+.boxter{
+	height: 450px;
+	width: 286px;
+	position: relative;
+	background: white;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.boxter img{
+	width: 100%;
+	object-fit: cover;
+}
+.boxter:hover .slide-r{
+	width: 100%;
+}
+.boxter .content h5{
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	font-family: 'Maven Pro', sans-serif;
+	padding-top: 200px;
+	margin-left: -5px;
+}
+.boster{
+	height: 450px;
+	width: 286px;
+	position: relative;
+	background: white;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.boster img{
+	width: 100%;
+	object-fit: cover;
+}
+.boster:hover .slide-r{
+	width: 100%;
+}
+.boster .content h5{
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	font-family: 'Maven Pro', sans-serif;
+	padding-top: 200px;
+	margin-left: -5px;
+}
+.bos{
+	height: 650px;
+	width: 286px;
+	position: relative;
+	background: white;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.bos img{
+	width: 100%;
+	object-fit: cover;
+}
+.bos:hover .slide-r{
+	width: 100%;
+}
+.bos .content h5{
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	font-family: 'Maven Pro', sans-serif;
+	padding-top: 285px;
+	margin-left: -5px;
+}
+.colum-6{
+	width: 50%;
+}
+.colum-49{
+	width: 50%;
+}
+.footer{
+	padding-left: 300px;
+	height: 80px;
+	background:#51BDEE;
+	width: 100%;
+}
+.footer p{
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Maven Pro', sans-serif;
+	padding-top: 25px;
+	font-style: italic;
+	color: white;
+}
+.mg-3{
+	padding-top: 30px;
+}
